@@ -70,24 +70,24 @@
 
     // Load all sections
     async function initPage() {
-      await loadComponent('header', 'header.html');
-      await loadComponent('hero', 'hero.html');
+      await loadComponent('header', 'project/header.html');
+      await loadComponent('hero', 'project/hero.html');
 
-      await loadComponent('carousel', 'carousel.html');
+      await loadComponent('carousel', 'project/carousel.html');
       if (typeof initCarousel === 'function') {
         initCarousel('#cards-carousel');
       }
 
-      await loadComponent('category-grid', 'category_grid.html');
-      await loadComponent('cuisine-category', 'cuisine_category.html');
-      await loadComponent('restaurants', 'restaurants.html', "Top Restaurants Near You");
-      await loadComponent('offers', 'offers.html');
-      await loadComponent('influencer', 'influencer.html');
-      await loadComponent('pickedForYou', 'restaurants.html', "Picked For You");
-      await loadComponent('chocolate', 'chocolate.html');
-      await loadComponent('deliciousDeal', 'restaurants.html', "Delicious Deals");
-      await loadComponent('mobileApp-section', 'mobileApp-section.html');
-      await loadComponent('footer', 'footer.html');
+      await loadComponent('category-grid', 'project/category_grid.html');
+      await loadComponent('cuisine-category', 'project/cuisine_category.html');
+      await loadComponent('restaurants', 'project/restaurants.html', "Top Restaurants Near You");
+      await loadComponent('offers', 'project/offers.html');
+      await loadComponent('influencer', 'project/influencer.html');
+      await loadComponent('pickedForYou', 'project/restaurants.html', "Picked For You");
+      await loadComponent('chocolate', 'project/chocolate.html');
+      await loadComponent('deliciousDeal', 'project/restaurants.html', "Delicious Deals");
+      await loadComponent('mobileApp-section', 'project/mobileApp-section.html');
+      await loadComponent('footer', 'project/footer.html');
     }
 
     initPage();
