@@ -107,18 +107,18 @@
       if (scrollY > 50 && scrollY < heroHeight - 100) {
         header.classList.add("hidden");
         header.classList.remove("scrolled");
-        logo.src = "/images/logo-white.svg";
+        logo.src = "images/logo-white.svg";
       }
       // After hero: show white header
       else if (scrollY >= heroHeight - 100) {
         header.classList.remove("hidden");
         header.classList.add("scrolled");
-        logo.src = "/images/logo-pink.png";
+        logo.src = "images/logo-pink.png";
       }
       // Top of page: show pink header
       else {
         header.classList.remove("hidden", "scrolled");
-        logo.src = "/images/logo-white.svg";
+        logo.src = "images/logo-white.svg";
       }
     });
   </script>
