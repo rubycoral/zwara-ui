@@ -1,0 +1,99 @@
+.offer-carousel-section {
+    max-width: 1500px;
+    margin: 0 auto 50px;
+    padding: 20px 10%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.offer-carousel-section h4 {
+    color: #ED145A;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.offer-carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.offer-carousel-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+}
+
+.offer-carousel-item {
+    min-width: 60px;
+    flex: 0 0 0 0;
+    text-align: center;
+}
+
+.offer-carousel-item img {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.offer-carousel-item p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.offer-carousel-btn {
+    background-color: #ffffff;
+    border: none;
+    color: #ED145A;
+    font-size: 17px;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.offer-carousel-btn.prev {
+    left: -16px;
+}
+
+.offer-carousel-btn.next {
+    right: -16px;
+}
+
+.offer-carousel-btn:hover {
+    background-color: #f7f7f7;
+}
+
+
+.offer-carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.offer-carousel-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+@media(max-width: 768px) {
+    .offer-carousel-section {
+        padding: 40px 10%;
+    }
+    .offer-carousel-item {
+        min-width: 90px;
+    }
+    .offer-carousel-item img {
+        width: 80px;
+        height: 80px;
+    }
+}

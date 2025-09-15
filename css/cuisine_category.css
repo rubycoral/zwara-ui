@@ -1,0 +1,94 @@
+.cuisine-carousel-section {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px 10%;
+    background-color: transparent;
+    text-align: center;
+}
+
+.cuisine-carousel-section h4 {
+    color: #ED145A;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.cuisine-carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.cuisine-carousel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.cuisine-carousel-item {
+    min-width: 100px;
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.cuisine-carousel-item img {
+    width: 85px;
+    height: 85px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cuisine-carousel-item p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #000;
+    font-weight: 600;
+}
+
+.cuisine-carousel-btn {
+    background-color: #ffffff;
+    border: none;
+    color: #ED145A;
+    font-size: 24px;
+    padding: 5px 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cuisine-carousel-btn.prev {
+    left: -10px;
+}
+
+.cuisine-carousel-btn.next {
+    right: -18px;
+}
+
+.cuisine-carousel-btn:hover {
+    background-color: #f7f7f7;
+}
+
+.cuisine-carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.cuisine-carousel-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@media(max-width: 768px) {
+    .cuisine-carousel-section {
+        padding: 40px 10%;
+    }
+    .cuisine-carousel-item {
+        min-width: 90px;
+    }
+    .cuisine-carousel-item img {
+        width: 80px;
+        height: 80px;
+    }
+}

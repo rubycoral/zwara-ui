@@ -1,0 +1,56 @@
+.influencers-section {
+  max-width: 1500px;
+  margin: 0 auto;
+  position: relative;
+  background-color: rgba(239, 51, 111, 0.12);
+  padding: 80px 10% 80px;
+  overflow: hidden;
+}
+
+.influencer-top-image {
+  position: absolute;
+  top: -1px;
+  left: 8%;
+  width: 100%;
+  text-align: left;
+}
+
+.influencer-top-image img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-left: 10%;
+}
+
+.influencers-section h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.influencers-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.influencers-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.influencer-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.influencer-card p {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
